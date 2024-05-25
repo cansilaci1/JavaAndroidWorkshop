@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DD0E1"
+    tools:context=".ui.fragments.AddProductFragment">
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="187dp"
+        android:ems="10"
+        android:hint="ürün fiyatı girin"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProductName"
+        app:layout_constraintStart_toStartOf="@+id/editTextProductName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProductName" />
+
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="ürün adı girin"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="EKLE"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPrice"
+        app:layout_constraintStart_toStartOf="@+id/editTextPrice"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

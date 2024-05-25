@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <Button
+        android:id="@+id/buttonEge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#283593"
+        android:text="DOKUZ EYLÜL"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUludag"
+        app:layout_constraintStart_toStartOf="@+id/buttonUludag"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUludag" />
+
+    <Button
+        android:id="@+id/buttonGazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#283593"
+        android:text="AÇÜ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetail" />
+
+    <Button
+        android:id="@+id/buttonUludag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#283593"
+        android:text="ULUDAĞ"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGazi"
+        app:layout_constraintStart_toStartOf="@+id/buttonGazi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGazi" />
+
+    <Button
+        android:id="@+id/buttonOdtu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#283593"
+        android:text="ODTÜ"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEge"
+        app:layout_constraintStart_toStartOf="@+id/buttonEge"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEge" />
+
+    <TextView
+        android:id="@+id/textViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
